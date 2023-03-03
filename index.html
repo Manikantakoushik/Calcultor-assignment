@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator with history</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div><h1 id="h1">Calculator </h1></div>
+    <div id="some">
+    <form action="" class="calculator" name="calc">
+        <input type="text" name="txt" class="inputArea" readonly>
+        <span class="operations plus" onclick="document.calc.txt.value +='+';">+</span>
+        <span class="operations"onclick="document.calc.txt.value +='-';">-</span>
+        <span class="operations" onclick="document.calc.txt.value +='*';">*</span>
+        <span class="operations" onclick="document.calc.txt.value +='/';">/</span>
+        <span onclick="document.calc.txt.value +='7';">7</span>
+        <span onclick="document.calc.txt.value +='8';">8</span>
+        <span onclick="document.calc.txt.value +='9';">9</span>
+        <span class="operations" onclick="document.calc.txt.value +='%';">%</span>
+        <span onclick="document.calc.txt.value +='4';">4</span>
+        <span onclick="document.calc.txt.value +='5';">5</span>
+        <span onclick="document.calc.txt.value +='6';">6</span>
+        <span onclick="document.calc.txt.value =backspace(document.calc.txt.value);">Del</span>
+        <span onclick="document.calc.txt.value +='1';">1</span>
+        <span onclick="document.calc.txt.value +='2';">2</span>
+        <span onclick="document.calc.txt.value +='3';">3</span>
+        <span class="clear" onclick="document.calc.txt.value ='';">AC</span>
+        <span onclick="document.calc.txt.value =square(document.calc.txt.value);">x<sup>2</sup></span>
+        <span onclick="document.calc.txt.value =cube(document.calc.txt.value);">x<sup>3</sup></span>
+        <span onclick="document.calc.txt.value =sqrt2(document.calc.txt.value);">&radic;</span>
+        <span onclick="document.calc.txt.value =sqrt3(document.calc.txt.value);">&#8731;</span>
+        <span onclick="document.calc.txt.value +='0';">0</span>
+        <span onclick="document.calc.txt.value +='.';">.</span>
+        <span onclick="document.calc.txt.value +='(';">(</span>
+        <span onclick="document.calc.txt.value +=')';">)</span>
+        <span class="equal" onclick="document.calc.txt.value =calculation(document.calc.txt.value);">=</span>
+        
+    </form>
+
+    <div id="history">
+        <h3>History</h3>
+        <p></p>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
